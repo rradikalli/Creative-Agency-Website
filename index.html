@@ -11,7 +11,7 @@
   <body>
     <!-- Home Section -->
     <section id="home">   
-            <div class="container d-flex p-relative">  
+            <div class="container  p-relative">  
                 <header class="header d-flex">                
                   <div class="logo">
                     <img
@@ -379,13 +379,15 @@
           if(menu_state == 0) {
               document.querySelector('.header nav ul').style.display = "block";
               menu_state = 1;
+              menu_icon.style.transform = "rotate(90deg)"
               intro.style.top = "50%"
-              home.style.height = "120vh"
+              home.style.height = "140vh"
           } else {
               document.querySelector('.header nav ul').style.display = "none";
               menu_state = 0;
               intro.style.top = "25%"
               home.style.height = "100vh"
+              menu_icon.style.transform = "rotate(0deg)"
           }
           return false;
       });

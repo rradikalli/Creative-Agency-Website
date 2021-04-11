@@ -20,8 +20,10 @@ body {
   header {
     @include flexbox(row, nowrap, space-between, stretch, stretch);
     padding: 30px 15px;
+
+
     nav {
-      width: 50%;
+      width: 30%;
 
       ul {
         display: block;
@@ -30,11 +32,15 @@ body {
         margin: 0px;
         display: none;
       }
+      
+      li:first-child{
+        margin-top: 20px;
+      }
 
       li {
-        text-align: right;
+        text-align: center;
         display: block;
-        line-height: 50px;
+        line-height: 55px;
         border-bottom: 1px solid #e3e3e3;
       }
 
@@ -259,6 +265,7 @@ body {
     font-weight: bold;
     color: #242424;
   }
+
 }
 
 #section-six {
@@ -348,18 +355,6 @@ body {
       outline: none;
       font-weight: bold;
       color: #242424;
-    }
-
-    button:hover {
-      background-color: #ff5959;
-      background-repeat: no-repeat;
-      border: 0.5px solid #c1c1c1;
-      cursor: pointer;
-      padding: 15px 20px;
-      overflow: hidden;
-      outline: none;
-      font-weight: bold;
-      color: white;
     }
   }
 

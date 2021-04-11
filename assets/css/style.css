@@ -787,15 +787,7 @@ section {
     height: 100vh;
   }
   #home .container {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
-    box-sizing: border-box;
     height: 100%;
-    clear: both;
-    overflow: auto;
   }
   #home header {
     flex-direction: row;
@@ -840,6 +832,11 @@ section {
   #home .intro #btn-1 {
     border: none;
     padding: 14px 21px;
+    outline: none;
+  }
+  #home .intro #btn-1:hover {
+    background-color: white;
+    color: #616161;
   }
   #home .intro #btn-2 {
     background-color: Transparent;
@@ -849,6 +846,10 @@ section {
     overflow: hidden;
     outline: none;
     padding: 12px 15px !important;
+  }
+  #home .intro #btn-2:hover {
+    background-color: white;
+    color: #616161;
   }
 
   #section-one .container {
@@ -892,6 +893,10 @@ section {
     font-weight: bold;
   }
 
+  #s3-link:hover {
+    padding-bottom: 20px;
+  }
+
   .section-two {
     flex-direction: row;
     flex-wrap: wrap;
@@ -909,6 +914,10 @@ section {
     overflow: hidden;
     outline: none;
     font-weight: bold;
+  }
+  #section-three button:hover {
+    background-color: white;
+    color: #2992fe;
   }
 
   .section-three {
@@ -1013,6 +1022,10 @@ section {
     font-weight: bold;
     color: #242424;
   }
+  #section-five button:hover {
+    color: #020024;
+    color: linear-gradient(90deg, #020024 0%, #a15892 35%, #00d4ff 100%);
+  }
 
   #section-six {
     height: 500px;
@@ -1068,6 +1081,9 @@ section {
     color: #242424;
     margin: 60px 0;
   }
+  #section-seven .text-section button:hover {
+    color: #ff5959;
+  }
   #section-seven .person-section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1088,15 +1104,7 @@ section {
     color: #242424;
   }
   #section-seven .person-section button:hover {
-    background-color: #ff5959;
-    background-repeat: no-repeat;
-    border: 0.5px solid #c1c1c1;
-    cursor: pointer;
-    padding: 15px 20px;
-    overflow: hidden;
-    outline: none;
-    font-weight: bold;
-    color: white;
+    color: #ff5959;
   }
   #section-seven h5 {
     color: #777777;
@@ -1188,7 +1196,7 @@ section {
     padding: 30px 15px;
   }
   #home header nav {
-    width: 50%;
+    width: 30%;
   }
   #home header nav ul {
     display: block;
@@ -1197,10 +1205,13 @@ section {
     margin: 0px;
     display: none;
   }
+  #home header nav li:first-child {
+    margin-top: 20px;
+  }
   #home header nav li {
-    text-align: right;
+    text-align: center;
     display: block;
-    line-height: 50px;
+    line-height: 55px;
     border-bottom: 1px solid #e3e3e3;
   }
   #home header nav a {
@@ -1492,17 +1503,6 @@ section {
     outline: none;
     font-weight: bold;
     color: #242424;
-  }
-  #section-seven .person-section button:hover {
-    background-color: #ff5959;
-    background-repeat: no-repeat;
-    border: 0.5px solid #c1c1c1;
-    cursor: pointer;
-    padding: 15px 20px;
-    overflow: hidden;
-    outline: none;
-    font-weight: bold;
-    color: white;
   }
   #section-seven h5 {
     color: #777777;
